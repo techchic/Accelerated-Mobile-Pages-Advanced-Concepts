@@ -28,6 +28,8 @@
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
 
 
 
@@ -101,10 +103,51 @@
     </script>
   </head>
   <body>
-    <header>
-      News Site
 
-    </header>
+    <header>
+
+      <style>
+.home-button {
+  float: left;
+}
+</style>
+
+  <a href="homepage.html">
+    <amp-img class="home-button" src="icons/home.png" width="36" height="36"></amp-img>
+  </a>
+
+  News Site
+
+
+</header>
+<div class="sub-menu">
+  <amp-carousel layout="fixed-height" height="38" type="carousel">
+    <a href="#example1">Example 1</a>
+    <a href="#example2">Example 2</a>
+    <a href="#example3">Longer Named Example 3</a>
+    <a href="#example4">Example 4</a>
+    <a href="#example5">Example 5</a>
+    <a href="#example6">Example 6</a>
+  </amp-carousel>
+</div>
+<article>
+
+  <style >
+
+  .sub-menu {
+  background: black;
+}
+
+.sub-menu a {
+  display: block;
+  background: tomato;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+    
+  </style>
 
     <amp-ad
   width="300"
@@ -176,6 +219,13 @@ amp-fit-text {
         Big, bold article quote goes here.
     </amp-fit-text>
 </amp-carousel>
+
+<style>
+  
+  amp-fit-text {
+    white-space: normal;
+}
+</style>
 
 <amp-analytics type="googleanalytics">
 <script type="application/json">
